@@ -108,7 +108,7 @@ function groups_create_group( $args = '' ) {
 		'enable_forum' => 0,
 		'date_created' => bp_core_current_time()
 	);
-
+  error_log( $defaults );
 	$args = wp_parse_args( $args, $defaults );
 	extract( $args, EXTR_SKIP );
 
